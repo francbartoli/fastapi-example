@@ -6,8 +6,8 @@ from models.BookModel import Book
 
 from repositories.AuthorRepository import AuthorRepository
 from repositories.BookRepository import BookRepository
-from schemas.AuthorSchema import AuthorSchema
-from schemas.BookSchema import (
+from schemas.pydantic.AuthorSchema import AuthorSchema
+from schemas.pydantic.BookSchema import (
     BookAuthorPostRequestSchema,
     BookSchema,
 )

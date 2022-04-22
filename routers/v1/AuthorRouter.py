@@ -2,11 +2,11 @@ from typing import List, Optional
 
 from fastapi import APIRouter, Depends, status
 
-from schemas.AuthorSchema import (
+from schemas.pydantic.AuthorSchema import (
     AuthorPostRequestSchema,
     AuthorSchema,
 )
-from schemas.BookSchema import BookSchema
+from schemas.pydantic.BookSchema import BookSchema
 from services.AuthorService import AuthorService
 
 AuthorRouter = APIRouter(

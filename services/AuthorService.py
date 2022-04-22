@@ -4,7 +4,7 @@ from fastapi import Depends
 from models.AuthorModel import Author
 
 from repositories.AuthorRepository import AuthorRepository
-from schemas.AuthorSchema import AuthorSchema
+from schemas.pydantic.AuthorSchema import AuthorSchema
 
 
 class AuthorService:

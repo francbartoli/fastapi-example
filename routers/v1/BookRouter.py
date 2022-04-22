@@ -2,8 +2,8 @@ from typing import List, Optional
 
 from fastapi import APIRouter, Depends, status
 
-from schemas.AuthorSchema import AuthorSchema
-from schemas.BookSchema import (
+from schemas.pydantic.AuthorSchema import AuthorSchema
+from schemas.pydantic.BookSchema import (
     BookAuthorPostRequestSchema,
     BookPostRequestSchema,
     BookSchema,
