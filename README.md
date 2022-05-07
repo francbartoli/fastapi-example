@@ -1,5 +1,7 @@
 # fastapi-example
 
+[![Tests](https://github.com/Progyan1997/fastapi-example/actions/workflows/tests.yml/badge.svg)](https://github.com/Progyan1997/fastapi-example/actions/workflows/tests.yml)
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
@@ -13,22 +15,15 @@ This example showcases Repository Pattern in Hexagonal Architecture _(also known
 
 ## Installation
 
-- Create and activate a Virtual Environment for Python 3 in your workspace:
+- Install all the project dependency using [Pipenv](pipenv.pypa.io):
 
   ```sh
-  $ python3 -m venv env
-  $ source venv/bin/activate
-  ```
-
-- Install all the project dependency using Pip:
-
-  ```sh
-  $ pip install -r requirements.txt
+  $ pipenv install --dev
   ```
 
 - Run the application from command prompt:
   ```sh
-  $ uvicorn main:app --reload
+  $ pipenv run uvicorn main:app --reload
   ```
 - Open `localhost:8000/docs` for API Documentation
 
@@ -38,11 +33,11 @@ For Testing, `unittest` module is used for Test Suite and Assertion, whereas `py
 
 - Run the following command to initiate test:
   ```sh
-  pytest
+  $ pipenv run pytest
   ```
 - To include Coverage Reporting as well:
   ```sh
-  pytest --cov-report xml --cov=.
+  $ pipenv run pytest --cov-report xml --cov .
   ```
 
 ## License
